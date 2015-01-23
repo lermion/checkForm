@@ -12,9 +12,10 @@ function checkForm(){
 						els[i].style.borderColor = "";
 					}
 				}
-			}// конец for
+			} // конец for
 			if(isEmpty){
 				alert("Заполните все поля!");
+				return false;
 			}else{
 				f.submit();
 			}
